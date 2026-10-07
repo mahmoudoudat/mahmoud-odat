@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project | Mahmoud Aloudat</title>
+<meta name="description" content="Architecture project by Mahmoud Aloudat.">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Project | Mahmoud Aloudat">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var d = document.documentElement, t = null, first = false;
+    d.classList.add("js");
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    d.setAttribute("data-theme", t);
+    try { first = !sessionStorage.getItem("introSeen"); } catch (e) {}
+    if (first && !matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("intro-on");
+    window.__wipeFallback = setTimeout(function () { d.classList.add("force-show"); }, 9000);
+  })();
+</script>
+<noscript><style>.wipe{display:none!important}</style></noscript>
+</head>
+<body class="project">
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-half top"></div><div class="intro-half bot"></div>
+  <div class="intro-ui">
+    <div class="intro-top"><span>MDO</span><span>Architecture, design, optimize</span></div>
+    <div class="intro-main">
+      <h2 class="intro-name"><span class="mask"><span>Mahmoud</span></span><span class="mask"><span>Aloudat</span></span></h2>
+      <svg class="intro-bldg" viewBox="0 0 340 352" focusable="false">
+        <path class="ln b-plinth" d="M14 348V334H266V348" pathLength="1"/>
+        <path class="ln b-gf" d="M20 334V252.8H260V334" pathLength="1"/>
+        <path class="ln b-gfw" d="M44 270H84V318H44Z" pathLength="1"/>
+        <path class="ln b-gfw" d="M120 270H180V318H120Z" pathLength="1"/>
+        <path class="ln b-gfw" d="M208 270H244V318H208Z" pathLength="1"/>
+        <path class="ln b-ff" d="M52 252.8V171.6H292V252.8" pathLength="1"/>
+        <path class="ln b-ffw" d="M76 190H116V236H76Z" pathLength="1"/>
+        <path class="ln b-ffw" d="M148 190H188V236H148Z" pathLength="1"/>
+        <path class="ln b-ffw" d="M220 190H268V236H220Z" pathLength="1"/>
+        <path class="ln b-rf" d="M52 171.6V98H212V171.6" pathLength="1"/>
+        <path class="ln b-rfw" d="M76 118H188V154H76Z" pathLength="1"/>
+        <path class="ln b-par" d="M44 98H220" pathLength="1"/>
+        <g class="lbl l1"><path d="M296 334H338"/><text x="298" y="329">+0.65</text></g>
+        <g class="lbl l2"><path d="M296 252.8H338"/><text x="298" y="247.8">+4.40</text></g>
+        <g class="lbl l3"><path d="M296 171.6H338"/><text x="298" y="166.6">+8.15</text></g>
+        <g class="lbl l4"><path d="M296 98H338"/><text x="298" y="93">+11.55</text></g>
+      </svg>
+    </div>
+    <div class="intro-foot">
+      <i class="intro-rule"></i>
+      <span class="intro-role">Architect, Amman, Jordan</span>
+      <span class="intro-level"><b id="intro-lv">+0.00</b><small>m</small></span>
+    </div>
+  </div>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="wipe" aria-hidden="true"><span>Mahmoud Aloudat</span></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html" data-transition aria-label="Mahmoud Aloudat, home">Mahmoud Aloudat <small>Architect</small></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="index.html#work" data-transition>Work</a>
+    <a href="index.html#about" data-transition>About</a>
+    <a href="index.html#contact" data-transition>Contact</a>
+    <a class="hide-sm" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+    <button type="button" id="theme-btn" aria-label="Switch to dark theme">Dark</button>
+  </nav>
+</header>
+
+<main id="main"></main>
+
+<footer class="foot wrap">
+  <div class="foot-inner">
+    <span>Mahmoud Aloudat. Architecture, design, optimize.</span>
+    <span class="logo-plate"><img src="assets/img/logo.webp" width="110" height="63" alt="MDO, Architecture Design Optimize" loading="lazy"></span>
+  </div>
+</footer>
+
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script src="js/content.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/project.js" defer></script>
+</body>
+</html>
